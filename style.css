@@ -1,0 +1,541 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primColor: #e0011a;
+  --secColor: #1a1d24;
+}
+
+header .topHeader {
+  height: 40px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header .topHeader .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .topHeader p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+header .topHeader .material-icons {
+  color: var(--primColor);
+}
+
+header .topHeader .rtHdr img {
+  transition: ease-in-out 0.3s;
+}
+
+header .topHeader .rtHdr img:hover {
+  transform: skew(10deg, 10deg);
+}
+
+header .mainHeader {
+  background: var(--secColor);
+  color: white;
+  padding: 20px 0;
+}
+
+header .mainHeader .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .mainHeader .navLnks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+header .mainHeader .navLnks li {
+  margin: 0 15px;
+}
+
+header .mainHeader .navLnks li:last-child {
+  margin-right: 0;
+}
+
+header .mainHeader .navLnks li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .mainHeader .navLnks li a:hover {
+  color: var(--primColor);
+}
+
+.btn-check:focus + .btn,
+.btn:focus,
+button:active {
+  box-shadow: none;
+  outline: none;
+}
+
+/*Primary Button*/
+.primButton {
+  width: max-content;
+  padding: 0 20px;
+  color: white;
+  background: var(--primColor);
+  border-radius: 0;
+  height: 45px;
+}
+
+.primButton:hover {
+  background: transparent;
+  border: 1px solid var(--primColor);
+  color: var(--primColor);
+}
+
+.hmVwPort .crslWrp {
+  position: relative;
+}
+
+.hmVwPort .crslWrp .txtContainer {
+  position: absolute;
+  background: #1a1d24c9;
+  color: white;
+  padding: 40px;
+  top: 128px;
+}
+
+.hmVwPort .crslWrp .txtContainer p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.hmVwPort .crslWrp .txtContainer h2 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hmVwPort .divHdr {
+  background: var(--primColor);
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  width: max-content;
+  font-weight: 600;
+}
+
+.hmVwPort .aboutContainer {
+  background: var(--secColor);
+  padding: 80px 20px;
+  color: white;
+}
+
+.hmVwPort .aboutContainer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hmVwPort .aboutContainer .abtContent h1 {
+  position: relative;
+  width: max-content;
+  margin: 25px 0;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.hmVwPort .aboutContainer .abtContent h1:after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--primColor);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.hmVwPort .aboutContainer .abtContent p {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.hmVwPort .aboutContainer .rprSrvcContent {
+  background: var(--primColor);
+  padding: 30px;
+  padding-top: 52px;
+  margin-left: 20px;
+  min-height: 320px;
+}
+
+.hmVwPort .aboutContainer .rprSrvcContent h1 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+.hmVwPort .aboutContainer .rprSrvcContent.blkCls {
+  background: black;
+}
+
+.hmVwPort .aboutContainer .rprSrvcContent img {
+  width: 59px;
+  height: 59px;
+}
+
+.hmVwPort .wtWeOfrCntnr {
+  background: url(./assets/offerbanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  background-position: 50% 50%;
+}
+
+.hmVwPort .wtWeOfrCntnr .divHdr {
+  font-size: 20px;
+}
+
+.hmVwPort .wtWeOfrCntnr p {
+  margin: 20px 0;
+  color: white;
+}
+
+.hmVwPort .ofrCardWrpr {
+  transform: translateY(-90px);
+}
+
+.hmVwPort .ofrCardWrpr .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+  gap: 20px;
+}
+
+.hmVwPort .ofrCardWrpr .card {
+  box-shadow: 0px 3px 6px #0000001a;
+  text-align: center;
+  padding: 30px;
+  min-width: 298px;
+  min-height: 323px;
+  border-radius: 0;
+}
+
+.hmVwPort .ofrCardWrpr .card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 150px;
+  margin: auto;
+}
+
+.hmVwPort .ofrCardWrpr .card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primColor);
+  margin: 20px 0;
+}
+
+.hmVwPort .reachUsContainer {
+  background: url(./assets/reachbanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hmVwPort .reachUsContainer .rchUsContent {
+  background: var(--secColor);
+  padding: 40px 0;
+  padding-left: 100px;
+  width: 40%;
+}
+
+.hmVwPort .reachUsContainer .rchUsContent .cntctCntns {
+  padding: 20px 0;
+  padding-right: 40px;
+}
+
+.hmVwPort .reachUsContainer .rchUsContent .cntctCntns .material-icons {
+  color: var(--primColor);
+  margin: 30px 0;
+  font-size: 32px;
+}
+
+.hmVwPort .reachUsContainer .rchUsContent .cntctCntns h4 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #e2e2e2;
+}
+
+.hmVwPort .srvcRqstWrpr {
+  padding: 60px 0;
+}
+
+.hmVwPort .srvcRqstWrpr h2 {
+  text-align: center;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  font-weight: 600;
+}
+
+.hmVwPort .srvcRqstWrpr h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--primColor);
+  position: absolute;
+  left: 20%;
+  bottom: -20px;
+}
+
+.hmVwPort .srvcRqstWrpr form {
+  max-width: 550px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.inptWrpr {
+  margin-bottom: 30px;
+}
+
+.inptWrpr label {
+  color: var(--secColor);
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.inptWrpr input {
+  height: 50px;
+  border: 1px solid #bcbcbc;
+  padding: 0 20px;
+  width: 100%;
+  transition: ease-in-out 0.4s;
+}
+
+.inptWrpr textarea {
+  height: 150px;
+  resize: none;
+  border: 1px solid #bcbcbc;
+  padding: 20px;
+  width: 100%;
+  transition: ease-in-out 0.4s;
+}
+
+.inptWrpr input:focus,
+.inptWrpr textarea:focus {
+  border: 1px solid var(--primColor);
+  outline: none;
+}
+
+.hmVwPort .srvcRqstWrpr form .primButton {
+  padding: 0 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hmVwPort .mnFooter {
+  background: var(--secColor);
+  color: white;
+  padding: 40px;
+}
+
+.hmVwPort .mnFooter .cntInfo {
+  margin: 20px auto;
+  padding: 12px 0;
+  position: relative;
+  width: max-content;
+}
+
+.hmVwPort .mnFooter .cntInfo:after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  border-radius: 10px;
+  background: var(--primColor);
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.hmVwPort .mnFooter .cntInfo:before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  border-radius: 10px;
+  background: var(--primColor);
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.hmVwPort .mnFooter .cntInfo a {
+  color: white;
+  text-decoration: none;
+}
+
+.hmVwPort .mnFooter .cntInfo span {
+  padding: 0 15px;
+}
+
+.hmVwPort .mnFooter .sclMda {
+  margin: 20px 0;
+}
+
+.hmVwPort .mnFooter .sclMda a {
+  margin: 0 10px;
+}
+
+.hmVwPort .mnFooter .sclMda img {
+  width: 30px;
+  height: 30px;
+  transition: ease-in-out 0.3s;
+}
+
+.hmVwPort .mnFooter .sclMda img:hover {
+  transform: skew(10deg, 10deg);
+}
+
+.hmVwPort .cpyRt {
+  font-size: 13px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.navbar-light .navbar-toggler {
+  color: var(--primColor);
+}
+
+/* header .mainHeader .navbar-collapse .navLnks {
+  align-items: flex-start;
+} */
+
+@media (max-width: 991px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 900px;
+  }
+
+  header .mainHeader .navLnks li {
+    margin: 10px 0;
+  }
+
+  header .mainHeader .navLnks {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hmVwPort .aboutContainer .container {
+    flex-wrap: wrap;
+  }
+
+  .hmVwPort .aboutContainer .rprSrvcContent {
+    margin-left: 0;
+    margin: 20px 0;
+    padding: 20px;
+    min-height: unset;
+  }
+
+  .hmVwPort .reachUsContainer .rchUsContent {
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  header .topHeader p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  header .topHeader {
+    height: 80px;
+  }
+
+  header .topHeader .container .lftHdr {
+    flex-wrap: wrap;
+  }
+
+  header .topHeader .container .clDiv {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  header .topHeader .container .rtHdr {
+    flex-wrap: wrap;
+  }
+
+  header .topHeader .container .rtHdr p {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header .mainHeader {
+    padding: 10px 0;
+  }
+
+  .hmVwPort .crslWrp .txtContainer {
+    padding: 10px;
+    top: 15px;
+    max-width: 250px;
+  }
+
+  .hmVwPort .crslWrp .txtContainer p {
+    font-size: 15px;
+  }
+
+  .hmVwPort .crslWrp .txtContainer h2 {
+    font-size: 30px;
+  }
+
+  .hmVwPort .aboutContainer {
+    padding: 40px 20px;
+  }
+
+  .hmVwPort .reachUsContainer {
+    height: 512px;
+  }
+
+  .hmVwPort .reachUsContainer .rchUsContent {
+    width: 100%;
+    height: 40%;
+  }
+
+  .hmVwPort .reachUsContainer .rchUsContent .cntctCntns {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .hmVwPort .reachUsContainer .rchUsContent .cntctCntns h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .hmVwPort .divHdr {
+    margin-bottom: 15px;
+  }
+
+  .hmVwPort .reachUsContainer .rchUsContent .cntctCntns .material-icons {
+    margin: 10px 0;
+    font-size: 24px;
+    width: 50px;
+  }
+
+  .hmVwPort .srvcRqstWrpr form {
+    padding: 0 23px;
+  }
+
+  .hmVwPort .mnFooter {
+    padding: 40px 20px;
+  }
+}
